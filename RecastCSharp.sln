@@ -5,6 +5,12 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecastCSharp", "Src\RecastCSharp.csproj", "{A39D0AF6-A2FC-460C-B830-12F98FE81959}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{1FD6EC43-BBAC-48F2-AC46-99D2AB61858E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecastCSharpTest", "Test\RecastCSharpTest\RecastCSharpTest.csproj", "{DE222C64-1380-4524-8B68-03C2262037B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorProj", "Test\BlazorProj\BlazorProj.csproj", "{6D8D4C31-39E6-48A0-BFB7-CE9755723B84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,11 +21,23 @@ Global
 		{A39D0AF6-A2FC-460C-B830-12F98FE81959}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A39D0AF6-A2FC-460C-B830-12F98FE81959}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A39D0AF6-A2FC-460C-B830-12F98FE81959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE222C64-1380-4524-8B68-03C2262037B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE222C64-1380-4524-8B68-03C2262037B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE222C64-1380-4524-8B68-03C2262037B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE222C64-1380-4524-8B68-03C2262037B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D8D4C31-39E6-48A0-BFB7-CE9755723B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D8D4C31-39E6-48A0-BFB7-CE9755723B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D8D4C31-39E6-48A0-BFB7-CE9755723B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D8D4C31-39E6-48A0-BFB7-CE9755723B84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E45083A-24A4-4054-8B24-F52902B30C9F}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6D8D4C31-39E6-48A0-BFB7-CE9755723B84} = {1FD6EC43-BBAC-48F2-AC46-99D2AB61858E}
+		{DE222C64-1380-4524-8B68-03C2262037B6} = {1FD6EC43-BBAC-48F2-AC46-99D2AB61858E}
 	EndGlobalSection
 EndGlobal

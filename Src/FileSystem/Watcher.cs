@@ -26,9 +26,9 @@ class Watcher
     watcher.Deleted += (source, e) => channel.Writer.WriteAsync(new FileChange { Filename = e.FullPath, Change = ChangeType.Removed });
     watcher.Renamed += async (source, e) =>
     {
-        // Note: Visual Studio writes changes by renaming the old .cs file to a temp name, writing a new temp file, deleting the old one, renaming the new one.
-        //       Lots of renaming.
-        if (e.OldFullPath.EndsWith(".cs", StringComparison.OrdinalIgnoreCase))
+      // Note: Visual Studio writes changes by renaming the old .cs file to a temp name, writing a new temp file, deleting the old one, renaming the new one.
+      //       Lots of renaming.
+      if (e.OldFullPath.EndsWith(".cs", StringComparison.OrdinalIgnoreCase))
         await channel.Writer.WriteAsync(new FileChange { Filename = e.OldFullPath, Change = ChangeType.Removed });
       if (e.FullPath.EndsWith(".cs", StringComparison.OrdinalIgnoreCase))
         await channel.Writer.WriteAsync(new FileChange { Filename = e.FullPath, Change = ChangeType.Added });
