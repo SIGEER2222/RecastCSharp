@@ -6,7 +6,6 @@ public class JsonToRecord
   [Fact]
   public async Task ShouldConvertJsonToRecord()
   {
-    // Arrange
     var model = new
     {
       Namespace = "TestNamespace",
