@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace RecastCSharp.CodeModel;
 
-class Solution : IDisposable
+public class Solution : IDisposable
 {
   private readonly string slnFile;
   private readonly MSBuildWorkspace workspace = MSBuildWorkspace.Create();

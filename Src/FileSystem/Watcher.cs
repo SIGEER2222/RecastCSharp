@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RecastCSharp.FileSystem;
 
-class Watcher
+public class Watcher
 {
   private readonly FileSystemWatcher watcher;
   private readonly Channel<FileChange> channel = Channel.CreateUnbounded<FileChange>();

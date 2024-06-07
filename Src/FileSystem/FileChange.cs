@@ -1,9 +1,9 @@
 namespace RecastCSharp.FileSystem;
 
-struct FileChange
+public struct FileChange
 {
   public string Filename;
   public ChangeType Change;
 }
 
-enum ChangeType { Added, Changed, Removed }
+public enum ChangeType { Added, Changed, Removed }

@@ -2,7 +2,7 @@
   "profiles": {
     "RoslynToTS": {
       "commandName": "Project",
-      "commandLineArgs": "Templates/main.scriban-txt",
+      // "commandLineArgs": "Templates/main.scriban-txt",
     }
   }
 }

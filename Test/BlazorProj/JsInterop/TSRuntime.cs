@@ -16,13 +16,13 @@ namespace Microsoft.JSInterop;
 public sealed class TSRuntime : ITSRuntime, IDisposable, IAsyncDisposable
 {
   #region construction
-  static readonly int MODULE_COUNT = 1;
   private readonly IJSRuntime _jsRuntime;
   public IJSRuntime JsRuntime => _jsRuntime;
 
   public TSRuntime(IJSRuntime jsRuntime)
   {
     _jsRuntime = jsRuntime;
+    modules = new Task<IJSObjectReference>?[BlazorProj.Generator.GeneratorHelp.TSRuntimeCount];
   }
 
   #endregion
@@ -97,7 +97,7 @@ public sealed class TSRuntime : ITSRuntime, IDisposable, IAsyncDisposable
 
   #region moduleList
 
-  private readonly Task<IJSObjectReference>?[] modules = new Task<IJSObjectReference>?[MODULE_COUNT];
+  private readonly Task<IJSObjectReference>?[] modules;
   public Task<IJSObjectReference>?[] Modules => modules;
 
   /// <summary>

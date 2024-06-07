@@ -8,7 +8,7 @@ using System.IO;
 
 namespace RecastCSharp.Scriban;
 
-class MainScript
+public class MainScript
 {
   public static bool Verbose;
 

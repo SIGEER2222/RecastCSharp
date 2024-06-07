@@ -10,15 +10,23 @@
     <PackageReference Include="Microsoft.CodeAnalysis" Version="4.*" />
     <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.*" />
     <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="4.*" />
+
+    <PackageReference Include="System.IO.Abstractions" Version="21.0.2" />
+    <PackageReference Include="Moq" Version="4.20.70" />
+    <PackageReference Include="System.Text.Json" Version="8.*" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
-    <PackageReference Include="System.Text.Json" Version="8.*" />
+    <PackageReference Include="xunit" Version="2.*" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.*" />
     <PackageReference Include="Verify" Version="23.*" />
     <PackageReference Include="Verify.Xunit" Version="23.*" />
-    <PackageReference Include="xunit" Version="2.*" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Src\RecastCSharp.csproj" />
+    <ProjectReference Include="..\BlazorProj\BlazorProj.csproj" />
   </ItemGroup>
 </Project>
